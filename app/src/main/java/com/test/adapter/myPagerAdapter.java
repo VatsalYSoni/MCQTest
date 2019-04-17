@@ -56,18 +56,6 @@ public class myPagerAdapter extends PagerAdapter {
         llOptions = view.findViewById(R.id.llOptions);
 
         Log.d("Position", String.valueOf(position));
-//        if (data.getQuestions().get(position).getId().equals(submit.keySet().toString())) {
-//        }
-
-//        for (Map.Entry<String, String> entry : submit.entrySet()) {
-//            System.out.printf("%s -> %s%n", entry.getKey(), entry.getValue());
-//            for (int i = 0; i < data.getQuestions().get(position).getOptions().size(); i++) {
-//                if (entry.getKey().equals(data.getQuestions().get(position).getId())) {
-//                    selected = i;
-//                    Log.d("selected", String.valueOf(selected));
-//                }
-//            }
-//        }
         tvQuestion.setText(data.getQuestions().get(position).getId() + "\n" + data.getQuestions().get(position).getQuestion());
         addRadioButtons(data.getQuestions().get(position).getOptions().size(), position);
         Log.d("TAG", "METHOD CALL");
@@ -123,29 +111,9 @@ public class myPagerAdapter extends PagerAdapter {
                     data.getQuestions().get(position).setAnswer(arrayList.get(0));
                 }
             });
-           /* rdbtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-
-                }
-            });*/
-//
-//            if (data.getQuestions().get(position).getAnswer().equals(data.getQuestions().get(position).getOptions().get(i))){
-//                rdbtn.setChecked(true);
-//            }
             Log.d("CHECKED", submit.keySet().toString());
             ll.addView(rdbtn);
         }
         llOptions.addView(ll);
     }
-
-//    private void addAnswer(String id, ArrayList<String> arrayList) {
-//        submit.put(id, arrayList.get(0));
-//        Log.d("ADD_ANSWER", submit.toString());
-//    }
-//
-//    public HashMap<String, String> onClick() {
-//        return submit;
-//    }
 }
