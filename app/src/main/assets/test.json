@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "id": "Question 1",
+      "question": "What is your favorite ice cream flavor?",
+      "trueAnswer": "Strawberry",
+      "options": [
+        "Strawberry",
+        "Chocolate",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "Question 2",
+      "question": "What are your current obligatory time commitments (things you have to do)? Check all that apply.",
+      "trueAnswer": "Paid work",
+      "options": [
+        "Paid work",
+        "Caring for children",
+        "Medical responsibilities",
+        "Domestic responsibilities"
+      ]
+    },
+    {
+      "id": "Question 3",
+      "question": "How are you textfield?",
+      "trueAnswer": "Paid work",
+      "options": ["Paid work",
+        "Caring for children",
+        "Chocolate",
+        "Vanilla"]
+    },
+    {
+      "id": "Question 4",
+      "question": "Rating about the App",
+      "trueAnswer": "Caring for children",
+      "options": ["Paid work",
+        "Caring for children",
+        "Chocolate",
+        "Vanilla"]
+    },
+    {
+      "id": "Question 5",
+      "question": "Do you like to play sports?",
+      "trueAnswer": "Yes",
+      "options": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "Question 6",
+      "question": "Upload image:",
+      "trueAnswer": "Caring for children",
+      "options": ["Caring for children",
+        "Caring for children1"]
+    }
+  ]
+}
